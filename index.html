@@ -1,56 +1,154 @@
-<!doctype html>
-<html>
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>My Profile</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Profile</title>
+    <style>
+        /* Importing Google Font */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
+        /* General Styling */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: #ffffff;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        /* Header Section */
+        .header {
+            padding: 50px;
+            background: rgba(0, 0, 0, 0.6);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            position: relative;
+        }
+
+        .header img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 5px solid #ffcc00;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+            animation: float 5s infinite ease-in-out;
+            transition: transform 0.5s, box-shadow 0.5s;
+        }
+
+        .header img:hover {
+            transform: scale(1.1) rotate(10deg);
+            box-shadow: 0 20px 50px rgba(255, 204, 0, 0.9), inset 0 0 15px rgba(255, 255, 0, 0.6);
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            color: #ffcc00;
+            text-shadow: 0 0 10px #ffcc00, 0 0 20px #ff9900;
+            animation: glow 2s infinite;
+            margin: 20px 0;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #ffffff;
+            margin: 0 15px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #ffcc00;
+            transform: scale(1.2);
+            text-shadow: 0 0 10px #ffcc00, 0 0 20px #ff9900;
+        }
+
+        /* About Section */
+        .about {
+            margin: 50px auto;
+            padding: 40px;
+            max-width: 800px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .about h2 {
+            font-size: 2.5rem;
+            color: #ffcc00;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #ffffff;
+        }
+
+        /* Footer Section */
+        .footer {
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            font-size: 0.9rem;
+            color: #ffffff;
+            margin-top: 20px;
+        }
+
+        /* Animations */
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+
+        @keyframes glow {
+            0%, 100% {
+                text-shadow: 0 0 10px #ffcc00, 0 0 20px #ff9900, 0 0 30px #ff6600;
+            }
+            50% {
+                text-shadow: 0 0 20px #ff9900, 0 0 30px #ff6600, 0 0 40px #ff3300;
+            }
+        }
+    </style>
 </head>
-
-<style>
-
-</style>
-
 <body>
+    <div class="header">
+        <img src="img/p20.jpg" alt="Profile Picture">
+        <h1>Krishna</h1>
+    </div>
 
-<div style="box-shadow:10px 10px 10px gray ;
-font-family:Arial black;
-font-size:30px;padding:2px;2px;
-text-align:centre;margine-top:15px;
-colour:teal; background: ;">
-<div style="background:#6dd1df;text-align:centre";>
-<img src= "img/p18.jpg" style="width:10%;">
-<span style="margine -left:400px;width:700px;text-align:centre;background:Yellow;">
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Portfolio</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </div>
 
-KRISHNA </span>
+    <div class="about">
+        <h2>About Me</h2>
+        <p>Hi, I am Krishna! A creative enthusiast who loves exploring new ideas in design and development. I aim to transform concepts into captivating visual experiences.</p>
+    </div>
 
-<div style="text-align:centre;font-family:arial;font-size:30px;colour:black">
-Profile</div></p>
-
-</div>
-</div>
-
-<div style="text-align:centre;margine-top:20px;font-size : 30px;background:yellow;">
-
-<a href="tesla.html"> Tesla UI  </a> &nbsp;&nbsp;
-<a href="photo gallery.html"> Photo Gallery </a> &nbsp;&nbsp;
-<a href="List.html"> List </a> &nbsp;&nbsp;
-<a href="ani.html"> Animation </a> &nbsp; &nbsp;
-<a href="ani2.html"> Animation2 </a> &nbsp; &nbsp;
-<a href="table.html"> Table </a> &nbsp;&nbsp;
-<a href="login form.html"> Login Form </a> 
-</div>
-
-<div style= font-size:30px;
-background:purple;>
-
-<h4> About me </h4>
-
-</div>
-<div style=word-spacing:10px;text-indent:150px; font-size:90px; font-family:verdana;borderpadding:100px; colour:dark gray">
-
-<h2> Hi I Am Krishna And I'm A Creative Person Driven By My Passion For Design. <h2>
-</div>
-
+    <div class="footer">
+        &copy; 2024 Krishna's Creative Profile. All Rights Reserved.
+    </div>
 </body>
-
 </html>
 
