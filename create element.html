@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.pic{
+    //border:15px skyblue dotted;
+    //transition: 0.50s;
+    //opacity: 0.50;
+}
+    
+
+</style>
+<body>
+    <h1>Creating Element</h1>
+
+   
+
+<script>
+    var mypic = document.createElement("img")
+
+    var d = document.createElement("div")
+
+    document.body.appendChild(d)
+
+    d.style="border:2px solid black;margin:auto;width:200px; height:200px; overflow:scroll; padding:20px"
+
+    d.innerHTML="<h1>About Us"
+
+    d.innerHTML="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam optio non debitis dignissimos quo cumque obcaecati dolor, ratione perferendis officia, iusto distinctio corrupti explicabo maiores velit excepturi repellat hic modi  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam optio non debitis dignissimos quo cumque obcaecati dolor, ratione perferendis officia, iusto distinctio corrupti explicabo maiores velit excepturi repellat hic modi!"
+    
+    document.body.appendChild(mypic)
+
+    mypic.src="img/l1.jpg"
+    mypic.style="border-radius:40px;margin:10px; cursor:pointer"
+    mypic.style.width="100%"
+    mypic.style.boxShadow="10px 10px 10px gray"
+    mypic.className="pic"
+
+    mypic.onmouseover = function()
+    {
+        mypic.className=""
+        mypic.style.width="300px"
+        mypic.style.transition="2s"
+        mypic.style.heigth="300px"
+        mypic.style.borderRadius="100px"
+    }
+
+    mypic.onmouseout= function()
+    {
+        mypic.className="pic"
+    }
+
+    document.title="Ready"
+
+    
+</script>    
+    
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+
+<head>
+<title>Registration Form </title>
+</head>
+<style>
+#container
+{
+margin:auto;
+border:1px solid gray
+border-radius:20px;
+padding:20px;
+box-shadow:10px 10px 10px gray;
+width:50%;
+}
+table
+{
+display:block;
+width:50%;
+}
+
+
+
+input[type="text"]{font-size:15px;width:100%;border:1px green ridge;}
+
+h2 {
+    text-align:center;
+    margin-bottom:20px;
+}
+
+
+
+
+</style>
+<body>
+<div id="container">
+<table border="0" cellpadding="20">
+<form action="https://tataplay/user/login.html" Method="post">
+ <h2>Registration Form</h2>
+
+<tr>
+<td><label for="user"> User Name </label></td>
+<td><input name="user"pattern="[A-Za-z]{3,10}" type="text" title="type name.." placeholder="Type Name here"></td>
+</tr>
+
+<tr>
+<td><label for="dob">DOB </label></td>
+<td><input type="date" ></td>
+</tr>
+
+<tr>
+        <td><label for="age">User Age</label></td>
+        <td><input id="age" type="number" max="15" size="100%"</td>
+</td>
+
+<tr>
+<td><label for="gender"> Gender </label></td>
+<td>
+Male<input type="Radio" checked value="male" name="gender"</td>
+Female<input type="Radio"value="Female" name="gender"</td>
+Other<input type="Radio"value="Other" name="gender"</td>
+</tr>
+
+<tr>
+<td><label for="time">Time </label></td>
+<td><input type="time" ></td>
+</tr>
+
+<tr>
+<td> <label for="country"> User country</label></td>
+<td>
+<select id="country" size="5" multiple>
+<option >select your country </option>
+<option value="india">India</option>
+<option value="usa">Usa</option>
+<option value="uk">Uk</option>
+<option value="china">China</option>
+<option value="japan">Japan</option>
+</select>
+</td>
+</tr>
+
+
+<tr>
+<td><label for="hobby">Hobby</label></td>
+<td>
+Reading <input type="checkbox" value="reading">
+Writing <input type="checkbox" value="writing">
+Dancing <input type="checkbox" value="dancing">
+Racing <input type="checkbox" value="racing">
+Cooking <input type="checkbox" value="cooking">
+</td>
+</tr>
+
+<tr>
+<td> <label for="massage"> User Massage</label></td>
+<td><textarea id="massage" placeholder="type massage here" cols="60" rows="10"></textarea></td>
+</tr>
+
+
+<tr>
+<td> <label for="upload file"> Upload File</label></td>
+<td> <input type="file"></td>
+</tr>
+
+
+<tr>
+<td> <label for="mycolor"> Select Color</label> </td>
+<td> <input type="color" onChange="document.bgColor=this.value"></td>
+</tr>
+
+
+<tr>
+<td> <Label id="city"></td>
+<td> <input list="city" id="city" name="city"/></td>
+
+
+<datalist id="city">
+<option value="Delhi"> </option>
+<option value="Bombay"> </option>
+<option value="Calcutta"> </option>
+<option value="UP"> </option>
+<option value="Bihar"> </option>
+<option value="MP"> </option>
+</datalist>
+
+</tr>
+
+<tr> <td> <input type="submit" value="Registration"> <input type="reset"></td></tr>
+    
+      </table>
+   </div>
+
+  </body>
+</html>
