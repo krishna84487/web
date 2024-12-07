@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tag</title>
+</head>
+<style>
+    #mypic{
+        width: 50%;
+    }
+
+    .mystyle{
+//background: black;
+color: black;
+padding: 35px;
+//box-shadow: 10px 10px 10px yellow;
+}
+
+.t2{
+    font-size: 20px;
+    font-family: verdana;
+    cursor: pointer;
+}
+
+</style>
+
+<body>
+    <h1>LAMBORGHINI</h1>
+    <img  id="mypic" src="img/j2.jpg">
+
+    <p class="text">LAMBORGHINI, Manufacturing magnate Italian Ferruccio Lamborghini founded the company in 1963 with the objective of producing a refined grand touring car to compete with offerings from established marques such as Ferrari. The company's first models, such as the 350 GT, were released in the mid-1960s. Lamborghini was noted for the 1966 Miura sports coupé, which used a rear mid-engine, rear-wheel drive layout..</p>
+
+
+    <p class="text">In 1963, Ferruccio Lamborghini, already an established industrialist who manufactured tractors, boilers, and air conditioners, founded Lamborghini Automobili on May 7, 1963.[5].</p>
+
+    <p class="text">Lamborghini licenses its brand to manufacturers that produce a variety of Lamborghini-branded consumer goods including scale models, clothing, accessories, bags, electronics[15] and laptop computers..</p>
+
+    <script>
+        var picture= document.getElementById("mypic")
+
+        picture.oneclick=function()
+        {
+            picture.style.cursor="pointer"
+            picture.src="/img/j2.jpg"
+        }
+
+        picture.onmouseover=function()
+        {
+            picture.style="transition:0.50s;"
+            picture.style.cursor="pointer"
+            picture.style.boxShadow="10px 10px 10px gray"
+            picture.style.borderRadius="150px"
+        }
+
+
+        var myp = document.getElementsByTagName("p")
+//alert(myp)
+
+/*
+myp[0].style="padding:45px; background:yellow;color:black;"
+myp[1].style="padding:45px; background:red;"
+myp[2].style="padding:45px; background:green;"
+*/
+
+
+
+//method three elements by class name (third method)
+
+myp[0].className="mystyle t2"
+myp[1].className="mystyle t2"
+myp[2].className="mystyle t2"
+
+        
+    </script>
+    
+</body>
+</html>
